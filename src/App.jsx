@@ -67,7 +67,7 @@ export default function App() {
   return (
     <>
       <SearchBar onSubmit={handleSubmit} />
-      <ul>
+      <ul className='list'>
         {images.map((image) => (
           <li key={image.id} onClick={() => handleImageClick(image)}>
             <ImageCard imageUrl={image.urls.small} altText={image.alt_description} />

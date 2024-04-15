@@ -4,3 +4,22 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px;
+  color: #4700b3;
+  background-color: azure;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  padding: 0;
+  flex-wrap: wrap;
+}
