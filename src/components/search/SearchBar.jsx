@@ -10,11 +10,13 @@ const SearchBar = ({ onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (query.trim() === '') {
-            toast.error('Please enter text to search images!');
+            toast.error("Please enter text to search images!");
             return;
         }
         onSubmit(query);
     };
+  
+
 
     return (
         <header className={styles.header}>
