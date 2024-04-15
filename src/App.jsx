@@ -66,10 +66,11 @@ export default function App() {
 
   return (
     <>
+      <h1 className='title'>Welcome to image Search App</h1>
       <SearchBar onSubmit={handleSubmit} />
       <ul className='list'>
         {images.map((image) => (
-          <li key={image.id} onClick={() => handleImageClick(image)}>
+          <li key={image.id} onClick={() => handleImageClick(image)} className='pic'>
             <ImageCard imageUrl={image.urls.small} altText={image.alt_description} />
           </li>
         ))}
